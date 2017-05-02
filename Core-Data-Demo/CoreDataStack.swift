@@ -15,7 +15,7 @@ class CoreDataStack: NSObject {
     
     static let shared = CoreDataStack()
     
-    private static let name = "TaskModel"
+    private static let name = "TaskModel" //MAKE SURE this is the same name as your data model.
     
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext

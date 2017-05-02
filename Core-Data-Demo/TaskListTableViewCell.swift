@@ -10,7 +10,7 @@ import UIKit
 
 class TaskListTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var taskLabel: UILabel! //Drag an outlet from the task name label in your cell in storyboard to this class. Call it taskLabel. 
     
     override func awakeFromNib() {
         super.awakeFromNib()
