@@ -76,7 +76,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let task = tasks[indexPath.row] //7. Add an array of Tasks. It can detect if there are managed objects saved to core data.
 
-        cell.taskLabel?.text = task.name! //8.. This checks if there is a task.name for the task (double check) and then sets it to the label in the tableview.
+        
+        if task.name != nil { //8.. This checks if there is a task.name for the task (double check) and then sets it to the label in the tableview.
+            cell.taskLabel?.text = task.name!
+        }
+        
         
         return cell
     }

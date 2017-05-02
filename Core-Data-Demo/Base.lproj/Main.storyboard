@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,11 +51,11 @@
                                         <rect key="frame" x="0.0" y="28" width="300" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U5M-D2-5gN" id="YmS-Tx-WFO">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mo-Bp-RLd">
-                                                    <rect key="frame" x="8.5" y="18" width="43" height="23.5"/>
+                                                    <rect key="frame" x="18" y="18" width="43" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -62,7 +63,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="1Mo-Bp-RLd" firstAttribute="centerY" secondItem="YmS-Tx-WFO" secondAttribute="centerY" id="Ejm-vA-LyY"/>
-                                                <constraint firstItem="1Mo-Bp-RLd" firstAttribute="centerX" secondItem="YmS-Tx-WFO" secondAttribute="centerX" multiplier="0.2" id="kF1-i3-j4c"/>
+                                                <constraint firstItem="1Mo-Bp-RLd" firstAttribute="leading" secondItem="YmS-Tx-WFO" secondAttribute="leadingMargin" constant="10" id="sux-7D-zfN"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
